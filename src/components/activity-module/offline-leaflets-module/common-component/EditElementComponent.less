@@ -1,0 +1,75 @@
+@baseName : editElement;
+
+:global {
+	.@{baseName} {
+		width : 350px;
+		
+		.ant-select-selection--single {
+			height : 32px;
+		}
+
+		.ant-row {
+			line-height: 30px;
+		}
+
+		.ant-row span.ant-switch {
+			margin-left: 10px;
+		 }
+	}
+}
+
+.editElementParamLabel {
+	float: left;
+    height: 35px;
+    line-height: 35px;
+    width: 50px;
+}
+
+.alignText {
+	float: left;
+    padding-top: 9px;
+	margin-left: 5px;
+	width: 30px;
+	color: #7d8a96;
+}
+
+.selectAlginText {
+	float: left;
+	font-size: 13px;
+	color : #2f4151;
+	padding-top: 9px;
+	margin-left: 5px;
+	width: 30px;
+}
+
+.alignText:hover, .selectAlginText:hover { 
+	font-size: 13px;
+	color : #2f4151;
+	cursor: pointer;
+	transform: scale(1.2);
+}
+
+.editElementParamLabelRight {
+	.editElementParamLabel();
+	text-align: center;
+}
+
+.exclusiveEditElementParamLabel {
+	.editElementParamLabel();
+	margin-right : 16px;
+	margin-top: 10px;
+}
+
+.imageBox {
+	height : 100px; 
+	width : 100px;
+	background-size: 100% 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-bottom: 10px;
+}
+
+.setTextMax {
+    height: 40px;
+    margin-top: 5px;
+}

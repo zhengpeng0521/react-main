@@ -1,0 +1,503 @@
+.main_page {
+	width : 100%;
+	height : 100%;
+}
+.top_container {
+	height : 45px;
+}
+.main_center {
+	width : 100%;
+	height : calc(~"100% - 45px");
+	min-height : calc(~"100% - 45px");
+	position: absolute;
+}
+.main_left {
+	width : 240px;
+	height : calc(~"100%");
+	background-color :#373d4d;
+	float:left;
+	//padding-top: 10px;
+	overflow-y: auto;
+}
+
+.main_right {
+	width : calc(~"100% - 240px");
+	min-height: calc(~"100%");
+	height: calc(~"100%");
+	float :left;
+	background-color : #e9eaed;
+}
+
+.main_container {
+	width :100%;
+	height: calc(~"100%");
+	min-height : calc(~"100%");
+	padding : 20px 0 20px 20px;
+	background-color : #e9eaed;
+    overflow: auto;
+}
+
+.page_content {
+	background-color: #ffffff;
+  	border-radius: 6px;
+  	padding: 20px;
+  	min-height: 100%;
+  	height: 100%;
+  	overflow: auto;
+}
+/*环绕效果*/
+.circle_one{
+    position: absolute;
+    top: calc(~'5% - 8px');
+    left: calc(~'50% - (10vw + 16px)/2');
+    height: calc(~'10vw + 16px');
+    width: calc(~'10vw + 16px');
+    border: 3px solid rgba(0, 0, 0, 0);
+    border-left: 3px solid #ffffff;
+    border-bottom: 3px solid #ffffff;
+    border-radius: 50%;
+    z-index: 9999;
+    background-color: transparent;
+    -webkit-animation: circleOne 1s ease infinite alternate;
+       -moz-animation: circleOne 1s ease infinite alternate;
+        -ms-animation: circleOne 1s ease infinite alternate;
+         -o-animation: circleOne 1s ease infinite alternate;
+            animation: circleOne 1s ease infinite alternate;
+}
+@keyframes circleOne{
+    from {transform:rotate(0)}
+    to {transform:rotate(180deg)}
+}
+@-o-keyframes circleOne{
+    from {-o-transform:rotate(0)}
+    to {-o-transform:rotate(180deg)}
+}
+@-ms-keyframes circleOne{
+    from {-ms-transform:rotate(0)}
+    to {-ms-transform:rotate(180deg)}
+}
+@-moz-keyframes circleOne{
+    from {-moz-transform:rotate(0)}
+    to {-moz-transform:rotate(180deg)}
+}
+@-webkit-keyframes circleOne{
+    from {-webkit-transform:rotate(0)}
+    to {-webkit-transform:rotate(180deg)}
+}
+
+.circle_two{
+    position: absolute;
+    top: calc(~'5% - 16px');
+    left: calc(~'50% - (10vw + 32px)/2');
+    height: calc(~'10vw + 32px');
+    width: calc(~'10vw + 32px');
+    border: 3px solid rgba(0, 0, 0, 0);
+    border-left: 3px solid #ffffff;
+    border-right: 3px solid #ffffff;
+    border-radius: 50%;
+    z-index: 9999;
+    background-color: transparent;
+    -webkit-animation: circleOne 1.5s ease infinite alternate;
+       -moz-animation: circleOne 1.5s ease infinite alternate;
+        -ms-animation: circleOne 1.5s ease infinite alternate;
+         -o-animation: circleOne 1.5s ease infinite alternate;
+            animation: circleOne 1.5s ease infinite alternate;
+}
+@keyframes circleTwo{
+    from {transform:rotate(0)}
+    to {transform:rotate(270deg)}
+}
+@-o-keyframes circleTwo{
+    from {-o-transform:rotate(0)}
+    to {-o-transform:rotate(270deg)}
+}
+@-ms-keyframes circleTwo{
+    from {-ms-transform:rotate(0)}
+    to {-ms-transform:rotate(270deg)}
+}
+@-moz-keyframes circleTwo{
+    from {-moz-transform:rotate(0)}
+    to {-moz-transform:rotate(270deg)}
+}
+@-webkit-keyframes circleTwo{
+    from {-webkit-transform:rotate(0)}
+    to {-webkit-transform:rotate(270deg)}
+}
+
+.circle_three{
+    position: absolute;
+    top: calc(~'5% - 24px');
+    left: calc(~'50% - (10vw + 48px)/2');
+    height: calc(~'10vw + 48px');
+    width: calc(~'10vw + 48px');
+    border: 3px solid rgba(0, 0, 0, 0);
+    border-top: 3px solid #ffffff;
+    border-bottom: 3px solid #ffffff;
+    border-radius: 50%;
+    z-index: 9999;
+    background-color: transparent;
+    -webkit-animation: circleThree 1s ease infinite alternate;
+       -moz-animation: circleThree 1s ease infinite alternate;
+        -ms-animation: circleThree 1s ease infinite alternate;
+         -o-animation: circleThree 1s ease infinite alternate;
+            animation: circleThree 1s ease infinite alternate;
+}
+@keyframes circleThree{
+    from {transform:rotate(90deg)}
+    to {transform:rotate(-90deg)}
+}
+@-o-keyframes circleThree{
+    from {-o-transform:rotate(90deg)}
+    to {-o-transform:rotate(-90deg)}
+}
+@-ms-keyframes circleThree{
+    from {-ms-transform:rotate(90deg)}
+    to {-ms-transform:rotate(-90deg)}
+}
+@-moz-keyframes circleThree{
+    from {-moz-transform:rotate(90deg)}
+    to {-moz-transform:rotate(-90deg)}
+}
+@-webkit-keyframes circleThree{
+    from {-webkit-transform:rotate(90deg)}
+    to {-webkit-transform:rotate(-90deg)}
+}
+
+.all_content{
+    position: absolute;
+    top: 5%;
+    left: calc(~'50% - (10vw)/2');
+    height: 10vw;
+    width: 10vw;
+    line-height: 10vw;
+    text-align: center;
+    border-radius: 50%;
+    z-index: 9999;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 1vw;
+    font-weight: 700;
+    -webkit-box-shadow: inset 1px 0 20px #ffffff;
+       -moz-box-shadow: inset 1px 0 20px #ffffff;
+        -ms-box-shadow: inset 1px 0 20px #ffffff;
+         -o-box-shadow: inset 1px 0 20px #ffffff;
+            box-shadow: inset 1px 0 20px #ffffff;
+    -webkit-animation: allContent 1.5s linear 1;
+       -moz-animation: allContent 1.5s linear 1;
+        -ms-animation: allContent 1.5s linear 1;
+         -o-animation: allContent 1.5s linear 1;
+            animation: allContent 1.5s linear 1;
+}
+@keyframes allContent{
+    from {opacity:0}
+    to {opacity:1}
+}
+@-o-keyframes allContent{
+    from {opacity:0}
+    to {opacity:1}
+}
+@-ms-keyframes allContent{
+    from {opacity:0}
+    to {opacity:1}
+}
+@-moz-keyframes allContent{
+    from {opacity:0}
+    to {opacity:1}
+}
+@-webkit-keyframes allContent{
+    from {opacity:0}
+    to {opacity:1}
+}
+
+.content_detail{
+    opacity: 0;
+    width:100%;
+    padding:15px;
+    background-color: #000000;
+    border-radius: 5px;
+    text-align: left;
+    line-height: normal;
+    -webkit-transition: all 0.5s;
+       -moz-transition: all 0.5s;
+        -ms-transition: all 0.5s;
+         -o-transition: all 0.5s;
+            transition: all 0.5s;
+    -webkit-box-shadow: inset 1px 0 20px #ffffff;
+       -moz-box-shadow: inset 1px 0 20px #ffffff;
+        -ms-box-shadow: inset 1px 0 20px #ffffff;
+         -o-box-shadow: inset 1px 0 20px #ffffff;
+            box-shadow: inset 1px 0 20px #ffffff;
+}
+.content_one{
+    opacity: 0;
+    position: absolute;
+    top: 5%;
+    height: 130px;
+    width: 200px;
+    line-height: 130px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #000000;
+    color: #fff;
+    z-index: 9999;
+    font-size: 0.5vw;
+    cursor: default;
+    -webkit-box-shadow: inset 1px 0 20px #ffffff;
+       -moz-box-shadow: inset 1px 0 20px #ffffff;
+        -ms-box-shadow: inset 1px 0 20px #ffffff;
+         -o-box-shadow: inset 1px 0 20px #ffffff;
+            box-shadow: inset 1px 0 20px #ffffff;
+    -webkit-transition: all 0.5s;
+       -moz-transition: all 0.5s;
+        -ms-transition: all 0.5s;
+         -o-transition: all 0.5s;
+            transition: all 0.5s;
+    -webkit-animation: contentOne 1s linear 0.6s 1;
+       -moz-animation: contentOne 1s linear 0.6s 1;
+        -ms-animation: contentOne 1s linear 0.6s 1;
+         -o-animation: contentOne 1s linear 0.6s 1;
+            animation: contentOne 1s linear 0.6s 1;
+    -webkit-animation-fill-mode: both;
+       -moz-animation-fill-mode: both;
+        -ms-animation-fill-mode: both;
+         -o-animation-fill-mode: both;
+            animation-fill-mode: both;
+}
+.content_one:hover{
+    -webkit-transform:scale(1.2);
+       -moz-transform:scale(1.2);
+        -ms-transform:scale(1.2);
+         -o-transform:scale(1.2);
+            transform:scale(1.2);
+}
+.content_one:hover > .content_detail{
+    opacity: 1;
+    margin-top: 20%;
+    transform: rotateY(720deg);
+}
+@keyframes contentOne{
+    from {opacity:0;top:10%;left:calc(~'50% - 5vw');}
+    to {opacity:1;top:35%;left:calc(~'30% - 100px');}
+}
+@-o-keyframes contentOne{
+    from {opacity:0;top:10%;left:calc(~'50% - 5vw');}
+    to {opacity:1;top:35%;left:calc(~'30% - 100px');}
+}
+@-ms-keyframes contentOne{
+    from {opacity:0;top:10%;left:calc(~'50% - 5vw');}
+    to {opacity:1;top:35%;left:calc(~'30% - 100px');}
+}
+@-moz-keyframes contentOne{
+    from {opacity:0;top:10%;left:calc(~'50% - 5vw');}
+    to {opacity:1;top:35%;left:calc(~'30% - 100px');}
+}
+@-webkit-keyframes contentOne{
+    from {opacity:0;top:10%;left:calc(~'50% - 5vw');}
+    to {opacity:1;top:35%;left:calc(~'30% - 100px');}
+}
+
+.content_two{
+    opacity: 0;
+    position: absolute;
+    top: 5%;
+    //left:calc(~'50% - 100px');
+    height: 130px;
+    width: 200px;
+    line-height: 130px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #000000;
+    color: #ffffff;
+    z-index: 9999;
+    font-size: 0.5vw;
+    cursor: default;
+    -webkit-box-shadow: inset 1px 0 20px #ffffff;
+       -moz-box-shadow: inset 1px 0 20px #ffffff;
+        -ms-box-shadow: inset 1px 0 20px #ffffff;
+         -o-box-shadow: inset 1px 0 20px #ffffff;
+            box-shadow: inset 1px 0 20px #ffffff;
+    -webkit-transition: all 0.5s;
+       -moz-transition: all 0.5s;
+        -ms-transition: all 0.5s;
+         -o-transition: all 0.5s;
+            transition: all 0.5s;
+    -webkit-animation: contentTwo 1s linear 1.2s 1;
+       -moz-animation: contentTwo 1s linear 1.2s 1;
+        -ms-animation: contentTwo 1s linear 1.2s 1;
+         -o-animation: contentTwo 1s linear 1.2s 1;
+            animation: contentTwo 1s linear 1.2s 1;
+    -webkit-animation-fill-mode: both;
+       -moz-animation-fill-mode: both;
+        -ms-animation-fill-mode: both;
+         -o-animation-fill-mode: both;
+            animation-fill-mode: both;
+}
+.content_two:hover{
+    -webkit-transform:scale(1.2);
+       -moz-transform:scale(1.2);
+        -ms-transform:scale(1.2);
+         -o-transform:scale(1.2);
+            transform:scale(1.2);
+}
+.content_two:hover .content_detail{
+    opacity: 1;
+    margin-top: 20%;
+    transform: rotateY(720deg);
+}
+@keyframes contentTwo{
+    from {opacity:0;top:10%;right:calc(~'50% - 5vw');}
+    to {opacity:1;top:35%;right:calc(~'30% - 100px');}
+}
+@-o-keyframes contentTwo{
+    from {opacity:0;top:10%;right:calc(~'50% - 5vw');}
+    to {opacity:1;top:35%;right:calc(~'30% - 100px');}
+}
+@-ms-keyframes contentTwo{
+    from {opacity:0;top:10%;right:calc(~'50% - 5vw');}
+    to {opacity:1;top:35%;right:calc(~'30% - 100px');}
+}
+@-moz-keyframes contentTwo{
+    from {opacity:0;top:10%;right:calc(~'50% - 5vw');}
+    to {opacity:1;top:35%;right:calc(~'30% - 100px');}
+}
+@-webkit-keyframes contentTwo{
+    from {opacity:0;top:10%;right:calc(~'50% - 5vw');}
+    to {opacity:1;top:35%;right:calc(~'30% - 100px');}
+}
+
+.content_three{
+    opacity: 0;
+    position: absolute;
+    top: 5%;
+    height: 130px;
+    width: 200px;
+    line-height: 130px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #000000;
+    color: #ffffff;
+    z-index: 9999;
+    font-size: 0.5vw;
+    cursor: default;
+    -webkit-box-shadow: inset 1px 0 20px #ffffff;
+       -moz-box-shadow: inset 1px 0 20px #ffffff;
+        -ms-box-shadow: inset 1px 0 20px #ffffff;
+         -o-box-shadow: inset 1px 0 20px #ffffff;
+            box-shadow: inset 1px 0 20px #ffffff;
+    -webkit-transition: all 0.5s;
+       -moz-transition: all 0.5s;
+        -ms-transition: all 0.5s;
+         -o-transition: all 0.5s;
+            transition: all 0.5s;
+    -webkit-animation: contentThree 1s linear 1.8s 1;
+       -moz-animation: contentThree 1s linear 1.8s 1;
+        -ms-animation: contentThree 1s linear 1.8s 1;
+         -o-animation: contentThree 1s linear 1.8s 1;
+            animation: contentThree 1s linear 1.8s 1;
+    -webkit-animation-fill-mode: both;
+       -moz-animation-fill-mode: both;
+        -ms-animation-fill-mode: both;
+         -o-animation-fill-mode: both;
+            animation-fill-mode: both;
+}
+.content_three:hover{
+    -webkit-transform:scale(1.2);
+       -moz-transform:scale(1.2);
+        -ms-transform:scale(1.2);
+         -o-transform:scale(1.2);
+            transform:scale(1.2);
+}
+.content_three:hover .content_detail{
+    opacity: 1;
+    margin-top: 20%;
+    transform: rotateY(720deg);
+}
+@keyframes contentThree{
+    from {opacity:0;top:10%;right:calc(~'50% - 5vw');}
+    to {opacity:1;top:35%;right:calc(~'30% - 100px');}
+}
+@-o-keyframes contentThree{
+    from {opacity:0;top:10%;right:calc(~'50% - 5vw');}
+    to {opacity:1;top:35%;right:calc(~'30% - 100px');}
+}
+@-ms-keyframes contentThree{
+    from {opacity:0;top:10%;right:calc(~'50% - 5vw');}
+    to {opacity:1;top:35%;right:calc(~'30% - 100px');}
+}
+@-moz-keyframes contentThree{
+    from {opacity:0;top:10%;right:calc(~'50% - 5vw');}
+    to {opacity:1;top:35%;right:calc(~'30% - 100px');}
+}
+@-webkit-keyframes contentThree{
+    from {opacity:0;top:10%;right:calc(~'50% - 5vw');}
+    to {opacity:1;top:35%;right:calc(~'30% - 100px');}
+}
+
+.content_four{
+    opacity: 0;
+    position: absolute;
+    top: 5%;
+    height: 130px;
+    width: 200px;
+    line-height: 130px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #000000;
+    color: #ffffff;
+    z-index: 9999;
+    font-size: 0.5vw;
+    cursor: default;
+    -webkit-box-shadow: inset 1px 0 20px #ffffff;
+       -moz-box-shadow: inset 1px 0 20px #ffffff;
+        -ms-box-shadow: inset 1px 0 20px #ffffff;
+         -o-box-shadow: inset 1px 0 20px #ffffff;
+            box-shadow: inset 1px 0 20px #ffffff;
+    -webkit-transition: all 0.5s;
+       -moz-transition: all 0.5s;
+        -ms-transition: all 0.5s;
+         -o-transition: all 0.5s;
+            transition: all 0.5s;
+    -webkit-animation: contentFour 1s linear 1.2s 1;
+       -moz-animation: contentFour 1s linear 1.2s 1;
+        -ms-animation: contentFour 1s linear 1.2s 1;
+         -o-animation: contentFour 1s linear 1.2s 1;
+            animation: contentFour 1s linear 1.2s 1;
+    -webkit-animation-fill-mode: both;
+       -moz-animation-fill-mode: both;
+        -ms-animation-fill-mode: both;
+         -o-animation-fill-mode: both;
+            animation-fill-mode: both;
+}
+.content_four:hover{
+    -webkit-transform:scale(1.2);
+       -moz-transform:scale(1.2);
+        -ms-transform:scale(1.2);
+         -o-transform:scale(1.2);
+            transform:scale(1.2);
+}
+.content_four:hover .content_detail{
+    opacity: 1;
+    margin-top: 20%;
+    transform: rotateY(720deg);
+}
+@keyframes contentFour{
+    from {opacity:0;top:10%;left:calc(~'50% - 5vw');}
+    to {opacity:1;top:35%;left:calc(~'80% - 100px');}
+}
+@-o-keyframes contentFour{
+    from {opacity:0;top:10%;left:calc(~'50% - 5vw');}
+    to {opacity:1;top:35%;left:calc(~'80% - 100px');}
+}
+@-ms-keyframes contentFour{
+    from {opacity:0;top:10%;left:calc(~'50% - 5vw');}
+    to {opacity:1;top:35%;left:calc(~'80% - 100px');}
+}
+@-moz-keyframes contentFour{
+    from {opacity:0;top:10%;left:calc(~'50% - 5vw');}
+    to {opacity:1;top:35%;left:calc(~'80% - 100px');}
+}
+@-webkit-keyframes contentFour{
+    from {opacity:0;top:10%;left:calc(~'50% - 5vw');}
+    to {opacity:1;top:35%;left:calc(~'80% - 100px');}
+}
+

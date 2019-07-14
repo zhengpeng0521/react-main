@@ -1,0 +1,78 @@
+/*引入less定义的方法*/
+@import '../../common/less/common.less';
+:global{
+    .head_org_detail_package_modal .ant-modal-body{
+        padding : 0 !important;
+        margin : 0;
+        overflow : hidden !important;
+    }
+    .head_org_detail_package_modal .ant-form-item{
+        margin-bottom : 10px;
+        &:last-child{ margin-bottom : 0; }
+    }
+    .head_org_detail_package_modal .ant-modal-footer{
+        padding : 0 20px 20px 20px !important;
+        margin : 0;
+    }
+}
+.package_table{
+    padding : 0 10px;
+    margin : 20px 0;
+    max-height : 400px;
+    overflow-y : auto;
+    overflow-x : hidden;
+}
+.thead,.trow{
+    width : 100%;
+    display : -webkit-flex;
+    display : flex;
+    flex-wrap : nowrap;
+    justify-content : center;
+    align-items : center;
+}
+.thead{
+    padding : 16px 10px;
+    border-bottom : 1px solid #ddd;
+}
+.trow{
+    height : 28px;
+    margin-bottom : 8px;
+    &:last-child{
+        margin-bottom : 0;
+    }
+}
+.thead_item,.trow_item{
+    height : 100%;
+    padding : 0 10px;
+    display : -webkit-flex;
+    display : flex;
+    flex-wrap : nowrap;
+    justify-content : center;
+    align-items : center;
+}
+/*flex布局若想达到text-overflow效果必须在内部再设置一个div*/
+.trow_item_inner{
+    white-space : nowrap;
+    overflow : hidden;
+    .textOverflow(ellipsis);
+}
+.dispatch_num_icon{
+    color : #5d9cec;
+    font-size : 14px;
+    cursor : pointer;
+}
+.dispatch_num_input{
+    width : 100%;
+    margin-right : 5px;
+}
+.second_ensure{
+    padding : 0 20px 20px 20px;
+}
+:global{
+    .head_org_dispatch_package_ensure_checkbox .ant-checkbox-wrapper{
+        display : -webkit-flex;
+        display : flex;
+        align-items : center;
+    }
+    .head_org_dispatch_package_ensure_checkbox .ant-checkbox-wrapper:not(:last-child){ margin : 0; }
+}

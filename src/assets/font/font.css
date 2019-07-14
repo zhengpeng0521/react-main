@@ -1,0 +1,92 @@
+/*叶根友毛笔*/
+@font-face {
+  font-family: "saasfont_font1";
+  src: url('font1.ttf') format('truetype');
+}
+
+.saasfont_font1 {
+  font-family:"saasfont_font1" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*风行书*/
+@font-face {
+  font-family: "saasfont_font2";
+  src: url('font2.ttf') format('truetype');
+}
+
+.saasfont_font2 {
+  font-family:"saasfont_font2" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*熊孩子体*/
+@font-face {
+  font-family: "saasfont_font3";
+  src: url('font3.ttf') format('truetype');
+}
+
+.saasfont_font3 {
+  font-family:"saasfont_font3" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*怪怪体*/
+@font-face {
+  font-family: "saasfont_font4";
+  src: url('font4.ttf') format('truetype');
+}
+
+.saasfont_font4 {
+  font-family:"saasfont_font4" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*酷黑*/
+@font-face {
+	font-family : 'saasfont_font6';
+	src: url('http://saas.ishanshan.com/web_manager/font/font6/font6.eot');
+	src: url('http://saas.ishanshan.com/web_manager/font/font6/font6.eot') format('embedded-opentype'),
+	url('http://saas.ishanshan.com/web_manager/font/font6/font6.woff') format('woff'),
+	url('http://saas.ishanshan.com/web_manager/font/font6/font6.ttf') format('truetype'),
+	url('http://saas.ishanshan.com/web_manager/font/font6/font6.svg') format('svg');
+}
+
+.saasfont_font6 {
+	font-family:"saasfont_font6" !important;
+  	font-size:16px;
+  	font-style:normal;
+  	-webkit-font-smoothing: antialiased;
+  	-moz-osx-font-smoothing: grayscale;
+}
+
+/*站酷快乐体2016*/
+@font-face {
+	font-family : 'saasfont_font7';
+	src: url('http://saas.ishanshan.com/web_manager/font/font7/font7.eot');
+	src: url('http://saas.ishanshan.com/web_manager/font/font7/font7.eot') format('embedded-opentype'),
+	url('http://saas.ishanshan.com/web_manager/font/font7/font7.woff') format('woff'),
+	url('http://saas.ishanshan.com/web_manager/font/font7/font7.ttf') format('truetype'),
+	url('http://saas.ishanshan.com/web_manager/font/font7/font7.svg') format('svg');
+}
+
+.saasfont_font7 {
+	font-family:"saasfont_font7" !important;
+  	font-size:16px;
+  	font-style:normal;
+  	-webkit-font-smoothing: antialiased;
+  	-moz-osx-font-smoothing: grayscale;
+}
+

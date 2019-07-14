@@ -1,0 +1,52 @@
+/*引入less定义的方法*/
+@import '../../less/common.less';
+
+/*新按钮*/
+.new_button_ghost{
+    height:28px;
+    padding:7px 26px;
+    font-size:14px;
+    color:#666;
+    line-height:12px;
+    background-color: #fff;
+    border:1px solid #ddd;
+    cursor:pointer;
+    display:inline-block;
+    .borderRadius(5px,5px,5px,5px);
+    .transition(all .3s);
+    .unCheckOrCopy();
+    &:hover{
+        color:@ghost_button_hover_color;
+        border:1px solid @ghost_button_hover_color;
+    }
+    &:active{
+        color:@button_click_color;
+        border:1px solid @button_click_color;
+    }
+    i{
+        margin-right: 4px;
+    }
+}
+.new_button_primary{
+    height:28px;
+    width:auto;
+    padding:7px 26px;
+    font-size:14px;
+    color:#fff;
+    line-height:14px;
+    background-color: @saas_main_color;
+    cursor:pointer;
+    display:inline-block;
+    .borderRadius(5px,5px,5px,5px);
+    .transition(all .3s);
+    .unCheckOrCopy();
+    &:hover{
+        background-color:@priamry_button_hover_color;
+    }
+    &:active{
+        background-color:@button_click_color;
+    }
+    i{
+        margin-right: 4px;
+    }
+}

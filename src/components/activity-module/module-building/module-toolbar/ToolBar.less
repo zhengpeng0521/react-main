@@ -1,0 +1,409 @@
+@import '../../../lib.less';
+
+.bar_content {
+    margin-top: 20px;
+}
+
+.add_text_type_1 {
+    font-size: 3rem;
+    text-align: center;
+    height: 4.5rem;
+    font-weight: bold;
+    line-height: 4rem;
+    cursor: pointer;
+}
+.add_text_type_1:hover {
+    border: 2px solid @zsb-main-color;
+}
+
+.add_text_type_2 {
+    font-size: 2.5rem;
+    text-align: center;
+    height: 3.5rem;
+    line-height: 3rem;
+    cursor: pointer;
+}
+.add_text_type_2:hover {
+    border: 2px solid @zsb-main-color;
+}
+
+.add_text_type_3 {
+    font-size: 1.5rem;
+    text-align: center;
+    height: 2.5rem;
+    line-height: 2rem;
+    cursor: pointer;
+}
+.add_text_type_3:hover {
+    border: 2px solid @zsb-main-color;
+}
+
+.add_text_type_4 {
+    font-size: 1rem;
+    text-align: center;
+    height: 1.5rem;
+    line-height: 1rem;
+    cursor: pointer;
+}
+.add_text_type_4:hover {
+    border: 2px solid @zsb-main-color;
+}
+
+.split_line {
+    width: 100%;
+    height: 1px;
+    display: inline-block;
+    background-color: #DDD;
+}
+
+.text_bar_content {
+    margin-top: 10px;
+}
+
+.bar_content_line {
+    display: inline-flex;
+    width: 100%;
+}
+
+.color_select_bar {
+    text-align: center;
+}
+.family_select_bar {
+    height: 40px;
+    line-height: 36px;
+    text-align: center;
+    margin-right: 5px;
+}
+
+.fontsize_select_bar {
+    text-align: center;
+    line-height: 36px;
+    margin-right: 5px;
+}
+
+.bar_item_title {
+    display: inline-block;
+    font-size: 0.8rem;
+    color: #666;
+    margin-right: 3px;
+}
+
+.font_style_bar {
+    padding: 5px 12px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.img_prev_list {
+    width: 100%;
+    overflow-y: auto;
+    padding: 5px;
+    margin-top: 20px;
+}
+
+.img_prev_item {
+    width: 120px;
+    height: 120px;
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    padding: 8px;
+    border: 1px solid #DDD;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.img_prev_content {
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+}
+
+.img_prev_content:hover {
+    opacity: 1;
+}
+
+.prop_title {
+    width: 120px;
+    float: left;
+    line-height: 30px;
+    height: 32px;
+}
+
+.props_slider {
+    width: 100%;
+}
+
+.props_slider:global(.ant-slider) {
+    background-color: #FFF;
+    border-top-color: #DDD;
+    border-bottom-color: #DDD;
+}
+
+.prop_value {
+    width: 135px;
+    float: right;
+}
+
+/*↓↓↓↓↓↓↓↓↓↓↓↓↓↓BaseToolbar↓↓↓↓↓↓↓↓↓↓↓↓↓↓*/
+
+.base_set_item {
+    width: 100%;
+    border: 1px solid #DDD;
+    border-radius: 5px;
+    margin-top: 20px;
+    padding: 5px;
+    padding-top: 15px;
+    position: relative;
+}
+
+.base_set_item_title {
+    font-size: 16px;
+    font-weight: bold;
+    position: absolute;
+    top: -14px;
+    display: inline-block;
+    background-color: #FFF;
+    padding: 0 5px;
+    left: 15px;
+}
+/*↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑BaseToolbar↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑*/
+/*↓↓↓↓↓↓↓↓↓↓↓↓↓↓TextToolbar↓↓↓↓↓↓↓↓↓↓↓↓↓↓*/
+.text_shadow_bar{
+
+}
+
+.text_h_shadow,.text_v_shadow,.text_shadow_blur,.text_shadow_color{
+    width:90%;
+    height:40px;
+}
+.text_h_shadow_title,.text_v_shadow_title,.text_shadow_blur_title,.text_shadow_color_title{
+    width: 140px;
+    float: left;
+}
+.text_h_shadow_operate,.text_v_shadow_operate,.text_shadow_blur_operate,.text_shadow_color_oparete{
+    width: 70px;
+    float: right;
+}
+.ant-slider{
+    background-color: #FFF;
+    border-top-color: #DDD;
+    border-bottom-color: #DDD;
+}
+.text_shadow_main{
+    float:left;
+    width:135px;
+    background-color: #FFF;
+    border-top-color: #DDD;
+    border-bottom-color: #DDD;
+}
+.background_color_bar{
+   height:40px;
+}
+.background_color_txt{
+    width: 65px;
+    float: left;
+    line-height: 38px;
+    height: 40px;
+}
+.background_img_bar{
+    height:100px;
+}
+.background_img_txt{
+    height: 90px;
+    float: left;
+    width: 70px;
+    line-height: 100px;
+}
+/*↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑TextToolbar↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑*/
+/*↓↓↓↓↓↓↓↓↓↓↓↓↓↓ButtonToolbar↓↓↓↓↓↓↓↓↓↓↓↓↓↓*/
+.btn_content_operate{
+    width:100%;
+}
+.btn_content_phone, .btn_content_link, .btn_content_text{
+    width:166px;
+}
+.add_btn_phone{
+    display:block;
+    margin:15px 0 0 0;
+}
+.add_btn_link{
+    display:block;
+    margin:15px 0 0 0;
+}
+.add_btn_turning{
+    display:block;
+    margin:15px 0 0 0;
+}
+.btn_font_color{
+    float: left;
+    margin-right: 20px;
+}
+/*↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ButtonToolbar↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑*/
+/*↓↓↓↓↓↓↓↓↓↓↓↓↓↓OtherToolbar↓↓↓↓↓↓↓↓↓↓↓↓↓↓*/
+
+.music_bar_content,.form_bar_content{
+    width:64px;
+    height:84px;
+    text-align:center;
+    float:left;
+    margin-left:20px;
+    cursor: pointer;
+}
+.form_bar_content:hover{
+    border: 2px solid dodgerblue;
+}
+.music_bar_content:hover{
+    border: 2px solid dodgerblue;
+}
+.music_bar_icon{
+    width:60px;
+    height:60px;
+    background: crimson;
+    color:#fff;
+}
+.form_bar_icon{
+    width:60px;
+    height:60px;
+    background:green;
+    color:#fff;
+}
+.music_bar_txt,.form_bar_txt{
+    width:60px;
+    text-align:center;
+}
+.form_bar_operate{
+    height: auto;
+    width: 100%;
+    margin-top: 30px;
+}
+.form_all_operate{
+    min-height: 150px;
+    width: 100%;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    position: relative;
+}
+.form_all_operate_title,.form_input_operate_title,.form_button_operate_title{
+    position: absolute;
+    top: -14px;
+    left: 30px;
+    background: #fff;
+}
+.form_input_operate{
+    margin:20px 0 20px 0;
+    min-height: 200px;
+    width: 100%;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    position: relative;
+    padding-bottom:10px;
+}
+.form_button_operate{
+    min-height: 200px;
+    width: 100%;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    position: relative;
+}
+.form_all_operate_slider,.form_btn_operate_slider{
+    padding: 10px 10px 0 10px;
+    height: 50px;
+}
+.form_all_operate_slider_title,.form_btn_operate_slider_title{
+    height: 40px;
+    line-height: 40px;
+    float: left;
+    width: 60px;
+}
+.form_props_slider{
+    display: inline-block;
+    width: 55%;
+    margin-top:5px;
+}
+.form_all_operate_slider_value,.form_btn_operate_slider_value{
+    width:20%;
+    float:right;
+    margin-top: 5px;
+}
+.form_button_font_color,.form_input_font_color,.form_input_font_size,.form_all_backgroun_color{
+    padding: 5px 10px 0 10px;
+}
+.all_background_img{
+    padding: 5px 10px 0 10px;
+    height:110px;
+}
+.form_button_backgroun_color_txt,.form_button_font_color_txt,.form_button_font_color_txt,.form_input_font_size_text,.form_all_backgroun_color_txt,.form_input_font_color_txt,.form_input_border_color_txt,.form_button_border_color_txt{
+    width: 80px;
+    float: left;
+    height: 30px;
+    line-height: 25px;
+}
+.form_button_textTitle{
+    width: 80px;
+    float: left;
+    line-height: 30px;
+}
+.form_button_textContent,.form_input_operate_content,.form_button_backgroun_color,.form_input_border_color,.form_button_border_color{
+    padding: 10px 10px 0 10px;
+}
+.form_operate_inputTextFirst,.form_operate_inputTextSecond,.form_operate_inputTextThird{
+    padding:10px 10px 0 10px;
+}
+.btn_background_img_bar{
+    height:110px;
+    padding:10px 10px 0 10px;
+}
+.form_operatre_textTitleFirst,.form_operatre_textTitleSecond,.form_operatre_textTitleThird{
+    width:70px;
+    float:left;
+
+}
+.btn_background_img_txt,.all_background_img_txt{
+    height: 100px;
+    line-height:100px;
+    width:80px;
+    float:left;
+}
+.form_btn_font_size_text{
+    width: 80px;
+    float: left;
+    height: 30px;
+    line-height: 25px;
+}
+.form_btn_font_size{
+    padding: 10px 10px 0 10px;
+}
+/*↓↓↓↓↓↓↓↓↓↓↓↓↓↓OtherToolbar↓↓↓↓↓↓↓↓↓↓↓↓↓↓*/
+/*↓↓↓↓↓↓↓↓↓↓↓↓↓↓MusicToolbar↓↓↓↓↓↓↓↓↓↓↓↓↓↓*/
+.base_music_operate{
+    padding:5px;
+    height: 50px;
+}
+.base_music_operate_title{
+    width:80px;
+    float:left;
+    height:50px;
+    line-height:50px;
+}
+.base_music_operate_content{
+    line-height:50px;
+    height:50px;
+}
+.music_common_props_item{
+    padding:5px;
+    height: 50px;
+}
+.music_prop_title{
+    height:50px;
+    line-height:50px;
+    float:left;
+    width: 80px;
+    text-align:center;
+}
+.music_prop_value{
+    height:50px;
+    float:left;
+    width:80px;
+    line-height:50px;
+}

@@ -1,0 +1,65 @@
+@import '../../less/common.less';
+.tree_render_item{
+    font-size : 14px;
+    border-radius : 5px;
+    padding : 0 10px;
+    background-color : #f2f2f2;
+    cursor : pointer;
+    display : -webkit-flex;
+    display : flex;
+    flex-wrap : nowrap;
+    align-items : center;
+    .transition(all .2s);
+    &:hover{
+        justify-content : space-between;
+        .tree_render_item_operation {
+            display : -webkit-flex;
+            display : flex;
+            flex-wrap : nowrap;
+            align-items : center;
+        }
+    }
+}
+.item{
+    position : relative;
+}
+.item_line_heng,.item_line_shu{
+    .transition(all .3s);
+}
+.item_line_heng{
+    position : absolute;
+    height : 0;
+    border-bottom : 1px dashed #ccc;
+}
+.item_line_shu{
+    position : absolute;
+    width : 0;
+    border-right : 1px dashed #ccc;
+}
+.item_icon_open,.item_icon_close{
+    width : 20px;
+    height : 100%;
+    .transition(transform .2s);
+}
+.item_icon_open{
+    .transform(scale(.5) rotate(90deg));
+}
+.item_icon_close{
+    .transform(scale(.5));
+}
+.tree_render_item_name{
+    width : calc(~'100% - 10px - 98px');      /*留10px作为间隔，最后三个操作按钮98px*/
+    white-space : nowrap;
+    overflow : hidden;
+    .textOverflow(ellipsis);
+}
+.tree_render_item_operation{
+    display : none;
+}
+.operation_icon{
+    color : #fff;
+    margin-right : 20px;
+    &:last-child{
+        margin-right : 10px;
+    }
+}

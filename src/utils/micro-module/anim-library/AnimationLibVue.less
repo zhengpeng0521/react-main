@@ -1,0 +1,949 @@
+/*逐渐显示*/
+
+@keyframes ani_fixed {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+
+/*左侧淡出*/
+
+@keyframes ani_left_fade_out {
+	.ani_fade_out(0px, 20px, -1000px);
+}
+
+
+/*右侧淡出*/
+
+@keyframes ani_right_fade_out {
+	.ani_fade_out(0px, -20px, 1000px);
+}
+
+/*右侧淡出*/
+@keyframes ani_right_fade_out_not_opacity {
+	.ani_fade_out_not_opacity(0px, -20px, 1000px);
+}
+
+/*左侧淡入*/
+
+@keyframes ani_left_fade_in {
+	.ani_fade_in(-1000px, 20px, 0px);
+}
+
+
+/*右侧淡入*/
+
+@keyframes ani_right_fade_in {
+	.ani_fade_in(1000px, -20px, 0px);
+}
+
+
+/*从上到下出现-短距离*/
+
+@keyframes ani_top_to_bottom {
+	.ani_top_bottom(-100px, 20px, 0px);
+}
+
+
+/*从上到下出现-长距离*/
+
+@keyframes ani_top_to_bottom_long {
+	.ani_top_bottom(-1000px, 20px, 0px);
+}
+
+
+/*从下到上出现-短距离*/
+
+@keyframes ani_bottom_to_top {
+	.ani_top_bottom(200px, 20px, 0px);
+}
+
+
+/*从下到上出现-长距离*/
+@keyframes ani_bottom_to_top_long {
+	.ani_top_bottom(800px, 20px, 0px);
+}
+
+
+/*右向左全屏穿过*/
+
+@keyframes ani_right_through {
+	.ani_through(1000px, -1000px);
+}
+
+
+/*左向右全屏穿过*/
+
+@keyframes ani_left_through {
+	.ani_through(-1000px, 1000px);
+}
+
+
+/*左右晃动*/
+
+@keyframes ani_swing {
+	0% {
+		-webkit-transform: translateX(0px);
+		transform: translateX(0px);
+	}
+	25% {
+		-webkit-transform: translateX(-150px);
+		transform: translateX(-150px);
+	}
+	50% {
+		-webkit-transform: translateX(0px);
+		transform: translateX(0px);
+	}
+	75% {
+		-webkit-transform: translateX(150px);
+		transform: translateX(150px);
+	}
+	100% {
+		-webkit-transform: translateX(0px);
+		transform: translateX(0px);
+	}
+}
+
+
+/*摆动后停止*/
+
+@keyframes ani_swing_stop {
+	20% {
+		-webkit-transform: rotate(15deg);
+		transform: rotate(15deg);
+	}
+	40% {
+		-webkit-transform: rotate(-10deg);
+		transform: rotate(-10deg);
+	}
+	60% {
+		-webkit-transform: rotate(5deg);
+		transform: rotate(5deg);
+	}
+	80% {
+		-webkit-transform: rotate(-5deg);
+		transform: rotate(-5deg);
+	}
+	100% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+}
+
+
+/*抖动*/
+
+@keyframes ani_jitter {
+	0% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	25% {
+		-webkit-transform: rotate(5deg);
+		transform: rotate(5deg);
+	}
+	50% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	75% {
+		-webkit-transform: rotate(-5deg);
+		transform: rotate(-5deg);
+	}
+	100% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+}
+
+
+/*上下不规则抖动*/
+
+@keyframes ani_top_bottom_jitter {
+	0% {
+		-webkit-transform: translateY(0px) rotate(0deg);
+		transform: translateY(0px) rotate(0deg);
+	}
+	50% {
+		-webkit-transform: translateY(50px);
+		transform: translateY(50px);
+	}
+	60% {
+		-webkit-transform: translateY(40px);
+		transform: translateY(40px);
+	}
+	70% {
+		-webkit-transform: translateY(50px) rotate(10deg);
+		transform: translateY(50px) rotate(10deg);
+	}
+	80% {
+		-webkit-transform: translateY(30px) rotate(-5deg);
+		transform: translateY(30px) rotate(-5deg);
+	}
+	100% {
+		-webkit-transform: translateY(0px);
+		transform: translateY(0px);
+	}
+}
+
+
+/*旋转出现*/
+
+@keyframes ani_rotate_show {
+	0% {
+		opacity: 0;
+		transform: rotate(0deg) scale(0);
+	}
+	100% {
+		opacity: 1;
+		transform: rotate(360deg) scale(1);
+	}
+}
+
+
+/*固定中心点左右晃动*/
+
+@keyframes ani_fixed_center_swing {
+	0% {
+		opacity: 1;
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	25% {
+		opacity: 1;
+		-webkit-transform: rotate(-5deg);
+		transform: rotate(-5deg);
+	}
+	50% {
+		opacity: 1;
+		-webkit-transform: rotate(0px);
+		transform: rotate(0px);
+	}
+	75% {
+		opacity: 1;
+		-webkit-transform: rotate(5deg);
+		transform: rotate(5deg);
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+}
+
+
+/*固定中心点左右晃动(剧烈)*/
+
+@keyframes ani_fixed_center_swing_severe {
+	0% {
+		opacity: 1;
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	25% {
+		opacity: 1;
+		-webkit-transform: rotate(-10deg);
+		transform: rotate(-10deg);
+	}
+	50% {
+		opacity: 1;
+		-webkit-transform: rotate(0px);
+		transform: rotate(0px);
+	}
+	75% {
+		opacity: 1;
+		-webkit-transform: rotate(10deg);
+		transform: rotate(10deg);
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+}
+
+
+/*逐渐变大(平缓)*/
+
+@keyframes ani_grow_big {
+	.ani_scale(0, 1, 0);
+}
+
+
+/*逐渐变大加抖动(弹性)*/
+
+@keyframes ani_grow_big_jitter {
+	0% {
+		opacity: 1;
+		-webkit-transform: scale(0);
+		transform: scale(0);
+	}
+	70% {
+		opacity: 1;
+		-webkit-transform: scale(1.2);
+		transform: scale(1.2);
+	}
+	80% {
+		opacity: 1;
+		-webkit-transform: scale(1);
+		transform: scale(1);
+	}
+	90% {
+		opacity: 1;
+		-webkit-transform: scale(1.1);
+		transform: scale(1.1);
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: scale(1);
+		transform: scale(1);
+	}
+}
+
+
+/*逐渐变小*/
+
+@keyframes ani_grow_small {
+	.ani_scale(1, 0, 1);
+}
+
+/*从小变大*/
+@keyframes ani_small_show_big {
+	.ani_scale(0, 0.5, 1);
+}
+
+/*持续变大缩小*/
+
+@keyframes ani_grow_continuous_change {
+	0% {
+		opacity: 1;
+		-webkit-transform: scale(0.8);
+		transform: scale(0.8);
+	}
+	50% {
+		opacity: 1;
+		-webkit-transform: scale(1);
+		transform: scale(1);
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: scale(0.8);
+		transform: scale(0.8);
+	}
+}
+
+
+/*流星动画*/
+
+@keyframes ani_shooting_star {
+	0% {
+		opacity: 1;
+		transform: translateY(0px) translateX(0);
+	}
+	100% {
+		opacity: 0;
+		transform: translateY(500px) translateX(-1000px);
+	}
+}
+
+
+/*360°旋转*/
+@keyframes ani_rotate360 {
+	.rotate(360deg);
+}
+
+/*180°旋转*/
+@keyframes ani_rotate180 {
+	.rotate(180deg);
+}
+
+/*90°旋转*/
+@keyframes ani_rotate90 {
+	.rotate(90deg);
+}
+
+/*45°旋转*/
+@keyframes ani_rotate45 {
+	.rotate(45deg);
+}
+
+/*360°倒置旋转*/
+@keyframes ani_contrary_rotate360 {
+	.rotate(-360deg);
+}
+
+/*180°旋转*/
+@keyframes ani_contrary_rotate180 {
+	.rotate(-180deg);
+}
+
+/*90°旋转*/
+@keyframes ani_contrary_rotate90 {
+	.rotate(-90deg);
+}
+
+/*45°旋转*/
+@keyframes ani_contrary_rotate45 {
+	.rotate(-45deg);
+}
+
+.rotate(@deg) {
+	0% {
+		opacity : 1;
+		transform: rotate(0deg);
+	}
+	100% {
+		opacity : 1;
+		transform: rotate(@deg);
+	}
+}
+
+
+/*呼吸模式*/
+
+@keyframes ani_breathing {
+	0% {opacity: 1}
+	50% {opacity: 0}
+	100% {opacity: 1}
+}
+
+/*高空降落弹性跳动*/
+
+@keyframes ani_landing {
+	0% {
+		opacity: 1;
+		-webkit-transform: translateY(0px);
+		transform: translateY(0px);
+	}
+	40% {
+		opacity: 1;
+		-webkit-transform: translateY(-50px);
+		transform: translateY(-50px);
+	}
+	50% {
+		opacity: 1;
+		-webkit-transform: translateY(0px);
+		transform: translateY(0px);
+	}
+	55% {
+		opacity: 1;
+		-webkit-transform: translateY(-30px);
+		transform: translateY(-30px);
+	}
+	60% {
+		opacity: 1;
+		-webkit-transform: translateY(0px);
+		transform: translateY(0px);
+	}
+	65% {
+		opacity: 1;
+		-webkit-transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: translateY(0px);
+		transform: translateY(0px);
+	}
+}
+
+
+/*上升消失*/
+
+@keyframes ani_rising {
+	0% {
+		transform: translateY(0px);
+		opacity: 1;
+	}
+	100% {
+		transform: translateY(-1000px);
+		opacity: 0;
+	}
+}
+
+@keyframes ani_falling {
+	0% {
+		transform: translateY(0px);
+		opacity: 1;
+	}
+	100% {
+		transform: translateY(1000px);
+		opacity: 0;
+	}
+}
+
+
+/*上下摆动*/
+
+@keyframes ani_shaking {
+	0% {
+		transform: translateY(0px);
+		opacity: 1;
+	}
+	25% {
+		transform: translateY(-30px);
+		opacity: 1;
+	}
+	50% {
+		transform: translateY(0px);
+		opacity: 1;
+	}
+	75% {
+		transform: translateY(30px);
+		opacity: 1;
+	}
+	100% {
+		transform: translateY(0px);
+		opacity: 1;
+	}
+}
+
+
+/*上下摆动平缓*/
+
+@keyframes ani_shaking_gentle {
+	0% {
+		transform: translateY(0px);
+		opacity: 1;
+	}
+	50% {
+		transform: translateY(-30px);
+		opacity: 1;
+	}
+	100% {
+		transform: translateY(0px);
+		opacity: 1;
+	}
+}
+
+
+/*上下跳动*/
+
+@keyframes ani_beating {
+	0% {
+		transform: translateY(0px);
+		opacity: 1;
+	}
+	30% {
+		transform: translateY(-30px);
+		opacity: 1;
+	}
+	40% {
+		transform: translateY(0px);
+		opacity: 1;
+	}
+	100% {
+		transform: translateY(0px);
+		opacity: 1;
+	}
+}
+
+/*刹车后冲刺左侧*/
+@keyframes ani_brake_sprint_left {
+
+	0% {
+		opacity : 1;
+		position: absolute;
+   	 	transform: translateX(0px);
+	}
+	30% {
+		position: absolute;
+		transform: translateX(100px) rotate(5deg);
+		-webkit-transform: translateX(100px) rotate(5deg);
+	}
+	60% {
+		position: absolute;
+		transform: translateX(100px) rotate(-5deg);
+		-webkit-transform: translateX(100px) rotate(-5deg);
+	}
+	70% {
+		position: absolute;
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	100% {
+		opacity : 1;
+		position: absolute;
+		transform: translateX(1000px);
+	}
+}
+
+/*刹车后冲刺右侧*/
+@keyframes ani_brake_sprint_right {
+
+	0% {
+		opacity : 1;
+		position: absolute;
+   	 	transform: translateX(0px);
+	}
+	30% {
+		position: absolute;
+		transform: rotate(5deg) translateX(-100px);
+		-webkit-transform: rotate(5deg) translateX(-100px);
+	}
+	60% {
+		position: absolute;
+		transform: translateX(-100px) rotate(5deg);
+		-webkit-transform: translateX(-100px) rotate(-5deg);
+	}
+	70% {
+		position: absolute;
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	100% {
+		opacity : 1;
+		position: absolute;
+		transform: translateX(-1000px);
+	}
+}
+
+/*刹车后冲刺上侧*/
+@keyframes ani_brake_sprint_top {
+	0% {
+		opacity : 1;
+		position: absolute;
+   	 	transform: translateY(-100px);
+	}
+	30% {
+		position: absolute;
+		transform: rotate(5deg) translateY(100px);
+		-webkit-transform: rotate(5deg) translateY(100px);
+	}
+	60% {
+		position: absolute;
+		transform: translateY(100px) rotate(-5deg);
+		-webkit-transform: translateY(100px) rotate(-5deg);
+	}
+	70% {
+		position: absolute;
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	100% {
+		opacity : 1;
+		position: absolute;
+		transform: translateY(1000px);
+	}
+}
+
+/*刹车后冲刺下侧*/
+@keyframes ani_brake_sprint_bottom {
+
+	0% {
+		opacity : 1;
+		position: absolute;
+   	 	transform: translateY(0px);
+	}
+	30% {
+		opacity : 1;
+		position: absolute;
+		transform: translateY(-100px) rotate(5deg);
+		-webkit-transform:translateY(-100px) rotate(5deg);
+	}
+	60% {
+
+		position: absolute;
+		transform: rotate(-5deg) translateY(-100px);
+		-webkit-transform: rotate(-5deg) translateY(-100px);
+	}
+	70% {
+		position: absolute;
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	100% {
+		opacity : 1;
+		position: absolute;
+		transform: translateY(-1000px);
+	}
+}
+
+
+
+
+
+
+
+
+
+
+/*字体打印*/
+
+@keyframes ani_text_print {
+	0% {
+		opacity: 0;
+		transform: scale(1.2);
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+/*字体动画*/
+@keyframes ani_text_roll {
+	0% {
+		left: 0;
+		opacity: 0;
+	}
+	35% {
+		left: 41%;
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+		opacity: 1;
+	}
+	65% {
+		left: 59%;
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+		opacity: 1;
+	}
+	100% {
+		left: 100%;
+		-webkit-transform: rotate(-180deg);
+		transform: rotate(-180deg);
+		opacity: 0;
+	}
+}
+
+@keyframes ani_text_tornado {
+	0% {
+		left: 0;
+		opacity: 0;
+	}
+	35% {
+		left: 41%;
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+		opacity: 1;
+	}
+	65% {
+		left: 59%;
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+		opacity: 1;
+	}
+	100% {
+		left: 100%;
+		-webkit-transform: rotate(-180deg);
+		transform: rotate(-180deg);
+		opacity: 0;
+	}
+}
+
+ @keyframes ani_image_swinging_up {
+ 	0% {
+ 		transform: rotate(0deg);
+ 		bottom: 3rem;
+ 		opacity: 1;
+ 	}
+ 	33.3% {
+ 		transform: rotate(-5deg);
+ 		bottom: 5.33rem;
+ 		opacity: 0.66;
+ 	}
+ 	66.6% {
+ 		transform: rotate(5deg);
+ 		bottom: 7.66rem;
+ 		opacity: 0.33;
+ 	}
+ 	100% {
+ 		transform: rotate(0deg);
+ 		bottom: 10rem;
+ 		opacity: 0;
+ 	}
+}
+
+
+@-webkit-keyframes wave_move {
+	0% {
+		transform: rotate(10deg) translateX(0px) ;
+		-webkit-transform: rotate(10deg) translateX(0px) ;
+	}
+	10% {
+		transform: rotate(5deg) translateX(100px) ;
+		-webkit-transform: rotate(5deg) translateX(100px) ;
+	}
+	20% {
+		transform: rotate(10deg) translateX(200px) ;
+		-webkit-transform: rotate(10deg) translateX(200px) ;
+	}
+	30% {
+		transform: rotate(5deg) translateX(300px) ;
+		-webkit-transform: rotate(5deg) translateX(300px) ;
+	}
+	40% {
+		transform: rotate(10deg) translateX(400px) ;
+		-webkit-transform: rotate(10deg) translateX(400px) ;
+	}
+	50% {
+		transform: rotate(5deg) translateX(500px);
+		-webkit-transform: rotate(5deg) translateX(500px);
+	}
+	60% {
+		transform: rotate(10deg) translateX(600px);
+		-webkit-transform: rotate(10deg) translateX(600px);
+	}
+	70% {
+		transform: rotate(5deg) translateX(700px);
+		-webkit-transform: rotate(5deg) translateX(700px);
+	}
+	80% {
+		transform: rotate(10deg) translateX(800px);
+		-webkit-transform: rotate(10deg) translateX(800px);
+	}
+	90% {
+		transform: rotate(5deg) translateX(900px);
+		-webkit-transform: rotate(5deg) translateX(900px);
+	}
+	100% {
+		transform: rotate(10deg) translateX(1000px);
+		-webkit-transform: rotate(10deg) translateX(1000px);
+	}
+}
+
+/*公共属性*/
+.ani_through(@startX, @endX) {
+	0% {
+		opacity: 1;
+		-webkit-transform: translateX(@startX);
+		transform: translateX(@startX);
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: translateX(@endX);
+		transform: translateX(@endX);
+	}
+}
+
+.ani_scale(@scale_start, @pauseX, @scale_end) {
+	0% {
+		opacity: 1;
+		-webkit-transform: scale(@scale_start);
+		transform: scale(@scale_start);
+	}
+	50% {
+		opacity: 1;
+		-webkit-transform: scale(@pauseX);
+		transform: scale(@pauseX);
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: scale(@scale_end);
+		transform: scale(@scale_end);
+	}
+}
+
+.ani_fade_out (@startX, @pauseX, @endX) {
+	0% {
+		-webkit-transform: translateX(@startX);
+		transform: translateX(@startX)
+	}
+	20% {
+		opacity: 1;
+		-webkit-transform: translateX(@pauseX);
+		transform: translateX(@pauseX)
+	}
+	100% {
+		opacity: 0;
+		-webkit-transform: translateX(@endX);
+		transform: translateX(@endX)
+	}
+}
+
+.ani_fade_out_not_opacity(@startX, @pauseX, @endX) {
+	0% {
+		-webkit-transform: translateX(@startX);
+		transform: translateX(@startX)
+	}
+	20% {
+		-webkit-transform: translateX(@pauseX);
+		transform: translateX(@pauseX)
+	}
+	100% {
+		-webkit-transform: translateX(@endX) scale(0.4);
+		transform: translateX(@endX) scale(0.4);
+	}
+}
+
+.ani_fade_in (@startX, @pauseX, @endX) {
+	0% {
+		opacity: 0;
+		-webkit-transform: translateX(@startX);
+		transform: translateX(@startX)
+	}
+	80% {
+		opacity: 0.8;
+		-webkit-transform: translateX(@pauseX);
+		transform: translateX(@pauseX)
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: translateX(@endX);
+		transform: translateX(@endX)
+	}
+}
+
+.ani_top_bottom(@startX, @pauseX, @endX) {
+	0% {
+		transform: translateY(@startX);
+		opacity: 0;
+	}
+	80% {
+		transform: translateY(@pauseX);
+		opacity: 0.8;
+	}
+	100% {
+		transform: translateY(@endX);
+		opacity: 1;
+	}
+}
+
+/*斜角飞升左向右*/
+ @keyframes ani_image_angle_launch {
+	0% {transform: translate(-100px, 0px)}
+	100% {transform: translate(1000px, -1000px)}
+}
+
+/*横纵裁剪公用属性*/
+
+.ANI_CLIP_COMMON(@NAME, @DURATION, @TIMING, @DELAY, @COUNT) {
+	-webkit-animation: @NAME @DURATION @TIMING @DELAY @COUNT;
+		-ms-animation: @NAME @DURATION @TIMING @DELAY @COUNT;
+			-moz-animation: @NAME @DURATION @TIMING @DELAY @COUNT;
+				-o-animation: @NAME @DURATION @TIMING @DELAY @COUNT;
+					animation: @NAME @DURATION @TIMING @DELAY @COUNT;
+}
+
+
+
+
+/*-----------------------------------------------------------------------------------*/
+
+
+/*-----------------------------------------------------------------------------------*/
+
+
+/*
+	字体上下左右居中
+*/
+
+.common_text_center {
+	display: flex;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	-webkit-align-items: center;
+	-webkit-justify-content: center;
+}
+
+.conmon_background_image {
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: center center;
+}

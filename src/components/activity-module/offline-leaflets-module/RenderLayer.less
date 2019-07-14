@@ -1,0 +1,175 @@
+@baseName : layerContent;
+
+:global {
+	.@{baseName} {
+		float : left;
+		width : 300px;
+		::-webkit-scrollbar {
+    		background-color: #2f4151!important;
+			border-radius: 5px;
+			width: 3px;
+			height: 3px;
+			margin-right: 5px;
+			right: 5px;
+		}		
+	}	
+}
+
+.auxiliaryButton {
+	min-height : 130px;
+	width : 100px;
+	position: absolute;
+	background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+}
+
+.bleedingLineButton {
+	color: white;
+    background-color: #5d9cec;
+    width: 63px;
+    height: 30px;
+    line-height: 30px;
+    border: 0px;
+    border-radius: 3px;
+	text-align: center;
+}
+
+.bleedingLineButtonF1F1F1 {
+	.bleedingLineButton();
+	background-color: white;
+	color : #666666;
+	border : 1px #ccc solid;
+}
+
+.layerListBox {
+	height : 210px;
+	width : 180px;
+   	border: 1px #cccccc solid;
+    margin-left: 50px;
+	overflow: auto;
+}
+
+.itemBox {
+	height : 20px;
+	width : 100%;
+	border-bottom: 1px #f1f1f1 solid;
+}
+
+.visibilityBox {
+	width : 20px;
+	height : 20px;
+	margin-left: 10px;
+	float: left;
+	border-right-color: #f1f1f1;
+	border-right-style: solid;
+	border-right-width: 1px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-right: 5px;
+}
+
+.visibilityBox:hover, .itemTextSelect:hover, .itemText:hover, .copyIcon:hover, .delectIcon:hover {
+	cursor: pointer;
+}
+
+.itemShowHide {
+	width : 15px;
+	height : 10px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.itemText {
+    width: 80px;
+    overflow: hidden;
+    float: left;
+    text-overflow: ellipsis;
+    height: 20px;
+	text-indent: 10px;
+}
+
+.itemTextSelect {
+	.itemText();
+	background-color: #f1f1f1;
+}
+
+.hiddenIcon {
+	.itemShowHide();
+}
+
+.showIcon {
+	.itemShowHide();
+	background-image: url(http://img.ishanshan.com/gimg/img/7e519fdc6239d45790a0c4ec8d0f2bac);
+}
+
+.itemHerder {
+	margin-top: 400px;
+    width: 180px;
+    height: 25px;
+    line-height: 25px;
+    padding-left: 10px;
+    color: #666;
+	background-color: #f1f1f1;
+	margin-left: 50px;
+	padding-left: 10px;	
+    border-top: 1px #cccccc solid;
+    border-left: 1px #cccccc solid;
+    border-right: 1px #cccccc solid;
+}
+
+.itemFooter {
+	width: 180px;
+    height: 25px;
+	line-height: 25px;
+    padding-left: 10px;	
+	background-color: #f1f1f1;
+	margin-left: 50px;
+    border-bottom: 1px #cccccc solid;
+    border-left: 1px #cccccc solid;
+    border-right: 1px #cccccc solid;
+}
+
+.commomDelectAndCopy {
+	height : 20px;
+	width: 17px;
+	float: right;
+    margin-top: 3px;
+	margin-right: 10px;
+}
+
+.copyIcon {
+	.commomDelectAndCopy();
+}
+
+.delectIcon {
+	.commomDelectAndCopy();
+}
+
+.itemTopMoveSelect  {
+	.topMove();
+	visibility: visible;
+	cursor: pointer;
+}
+
+.itemBottomSelect {
+	.bottomMove();
+	visibility: visible;
+	cursor: pointer;
+}
+
+.topMove {
+	visibility: hidden;
+	float : left;
+	margin-left: 10px;
+}
+
+.bottomMove {
+	visibility: hidden;
+	float: right;
+	margin-right: 10px;
+}

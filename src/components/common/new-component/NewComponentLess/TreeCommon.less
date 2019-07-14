@@ -1,0 +1,44 @@
+/*引入less定义的方法*/
+@import '../../less/common.less';
+:global{
+    .zj_tree_common{
+        margin-bottom : 20px;
+    }
+    .zj_tree_common .ant-tree{
+        padding : 0;
+    }
+}
+.first_tree{
+    font-size : 14px;
+    line-height : 14px;
+    color : #666;
+}
+.tree_item{
+    display : -webkit-flex;
+    display : flex;
+    flex-wrap : nowrap;
+    &:hover{
+        .tree_operation{
+            display : block;
+        }
+    }
+}
+.second_tree{
+    font-size : 12px;
+    color : #666;
+}
+.common_tree{
+    color : #999;
+}
+.tree_name{
+    margin-right : 50px;
+}
+.tree_operation{
+    display : none;
+}
+.tree_operation_item{
+    margin-right : 10px;
+    &:last-child{
+        margin-right : 0;
+    }
+}

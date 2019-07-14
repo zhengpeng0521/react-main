@@ -1,0 +1,271 @@
+/*
+	1.动画基础 		例子 .ANI(@ANI_FIXED 3s LINEAR 0s INFINITE) || .ANI(ani_fixed 3s linear 0s infinite)
+		animation-name
+	2.动画时长				 ms || s
+		animation-duration
+	3.动画速度
+		animation-timing-function
+			linear			动画从头到尾的速度是相同的。
+			ease			动画以低速开始，然后加快，在结束前变慢。
+			ease-in			动画以低速开始。
+			ease-out		动画以低速结束。
+			ease-in-out		动画以低速开始和结束。
+	4.动画延迟
+		animation-delay		ms || s
+	5.动画次数
+		animation-iteration-count
+			number			0-无限
+			forwards		一次
+			infinite		无限次
+*/
+
+@import './AnimationLibVue.less';
+
+.ANI(@ANIMATION_VALUE) {
+	-webkit-animation							: @ANIMATION_VALUE;
+		-ms-animation							: @ANIMATION_VALUE;
+			-moz-animation						: @ANIMATION_VALUE;
+				-o-animation					: @ANIMATION_VALUE;
+					animation					: @ANIMATION_VALUE;
+}
+
+/*逐渐显示*/						//http://img.ishanshan.com/gimg/img/fa2d64afc44b74cc08d1b614abd93663
+@ANI_FIXED 						: ani_fixed;
+
+/*左侧淡出*/						//http://img.ishanshan.com/gimg/img/a1a9c43ed8d89c411848643739589c3c
+@ANI_LEFT_FADE_OUT 				: ani_left_fade_out;
+
+/*右侧淡出*/						//http://img.ishanshan.com/gimg/img/e91efa20e0b59781f16499139a691d07
+@ANI_RIGHT_FADE_OUT 			: ani_right_fade_out;
+
+/*右侧淡入不透明*/
+@ANI_RIGHT_FADE_OUT_NOT_OPACITY : ani_right_fade_out_not_opacity;
+
+/*左侧淡入*/						//http://img.ishanshan.com/gimg/img/2f9e019a9ac66e896dc5285e609b2354
+@ANI_LEFT_FADE_IN 				: ani_left_fade_in;
+
+/*右侧淡入*/						//http://img.ishanshan.com/gimg/img/6de74e00c3b6ab1b9743f614c43a12f1
+@ANI_RIGHT_FADE_IN 				: ani_right_fade_in;
+
+/*从上到下出现-短距离*/				 //http://img.ishanshan.com/gimg/img/3e99df814279db5d2732e0fcba60ddb8
+@ANI_TOP_TO_BOTTOM 				: ani_top_to_bottom;
+
+/*从上到下出现-长距离*/				 //http://img.ishanshan.com/gimg/img/b24d84d60ef15bd7a7a21e78fa8bb4c5
+@ANI_TOP_TO_BOTTOM_LONG 		: ani_top_to_bottom_long;
+
+/*从下到上出现-端距离*/
+@ANI_BOTTOM_TO_TOP 		 		: ani_bottom_to_top;
+
+/*从下到上出现-长距离*/
+@ANI_BOTTOM_TO_TOP_LONG 		: ani_bottom_to_top_long;
+
+/*右向左全屏穿过*/					  //http://img.ishanshan.com/gimg/img/7d1ecb70abf2b77d93a732bb5f906a71
+@ANI_RIGHT_TUROUGH  			: ani_right_through;
+
+/*左向右全屏穿过*/					  //http://img.ishanshan.com/gimg/img/3bd01758d0dad2a4f6e3592f84c3b86a
+@ANI_LEFT_TUROUGH 				: ani_left_through;
+
+/*左右晃动*/						//http://img.ishanshan.com/gimg/img/d5e8fb386402595a2d688e21d04da4c8
+@ANI_SWING 						: ani_swing;
+
+/*摆动后停止*/					   //http://img.ishanshan.com/gimg/img/230724b19ce1d6a330fca8e3c0bbfc85
+@ANI_SWING_STOP 				: ani_swing_stop;
+
+/*抖动*/							 //http://img.ishanshan.com/gimg/img/b553b229ede2e5647d86e452af0358f4
+@ANI_JITTER 					: ani_jitter;
+
+/*上下不规则抖动*/					  //http://img.ishanshan.com/gimg/img/e5fd8cc95ac74cf2d079628aaed0ef58
+@ANI_TOP_BOTTOM_JITTER 			: ani_top_bottom_jitter;
+
+/*旋转出现*/						//http://img.ishanshan.com/gimg/img/dc60c8d7053b61616382bc9f8819d700
+@ANI_ROTATE_SHOW  				: ani_rotate_show;
+
+/*固定中心点左右晃动*/				 //http://img.ishanshan.com/gimg/img/d5c51e9aa6277f4f85d8d6a41405b06c
+@ANI_FIXED_CENTER_SWING 		: ani_fixed_center_swing;
+
+/*固定中心点左右晃动(剧烈)*/		    //http://img.ishanshan.com/gimg/img/b128e4e22f217a07aba3374066337c7e
+@ANI_FIXED_CENTER_SWING_SEVERE 	: ani_fixed_center_swing_severe;
+
+/*逐渐变大(平缓)*/				   //http://img.ishanshan.com/gimg/img/a2fb30341b62ee5aebffebed1da39fca
+@ANI_GROW_BIG 					: ani_grow_big;
+
+/*逐渐变大加抖动(弹性)*/				 //http://img.ishanshan.com/gimg/img/210122a322d43db173303e2e2d08cd58
+@ANI_GROW_BIG_JITTER 			: ani_grow_big_jitter;
+
+/*逐渐变小*/						//http://img.ishanshan.com/gimg/img/a2fb30341b62ee5aebffebed1da39fca
+@ANI_GROW_SMALL 				: ani_grow_small;
+
+/*持续变大缩小*/					  //http://img.ishanshan.com/gimg/img/ac35a5b9abd79e41db6318d10c96b918
+@ANI_GROW_CONTINUOUS_CHANGE 	: ani_grow_continuous_change;
+
+/*从小到大出现*/
+@ANI_SMALL_SHOW_BIG 			: ani_small_show_big;
+
+/*流星动画*/						//http://img.ishanshan.com/gimg/img/b234798766082c14052968ff4f0bb6df
+@ANI_SHOOTING_STAR 				: ani_shooting_star;
+
+/*360°旋转*/						 //http://img.ishanshan.com/gimg/img/150850584df269e207270784da6adc7c
+@ANI_ROTATE360 					: ani_rotate360;
+
+/*180°旋转*/
+@ANI_ROTATE180 					: ani_rotate180;
+
+/*90°旋转*/
+@ANI_ROTATE90					: ani_rotate90;
+
+/*45°旋转*/
+@ANI_ROTATE45 					: ani_rotate45;
+
+/*360°反向旋转*/					//http://img.ishanshan.com/gimg/img/150850584df269e207270784da6adc7c
+@ANI_CONTRARY_ROTATE360 		: ani_contrary_rotate360;
+
+/*180°反向旋转*/
+@ANI_CONTRARY_ROTATE180 		: ani_contrary_rotate180;
+
+/*90°反向旋转*/
+@ANI_CONTRARY_ROTATE90 			: ani_contrary_rotate90;
+
+/*45°反向旋转*/
+@ANI_CONTRARY_ROTATE45 			: ani_contrary_rotate45;
+
+/*呼吸模式*/
+@ANI_BREATHING 			 		: ani_breathing;
+
+/*高空降落弹性跳动*/				 //http://img.ishanshan.com/gimg/img/89ee1ed9737fded4bd7370eca564666c
+@ANI_LANGDING 					: ani_landing;
+
+/*上升消失*/						//http://img.ishanshan.com/gimg/img/a79f31b4f3054bfba452ac3954a381fa
+@ANI_RISING 					: ani_rising;
+
+/*下降消失*/
+@ANI_FALLING 					: ani_falling;
+
+/*上下摆动*/						//http://img.ishanshan.com/gimg/img/427cbd8266c57eb323e54c1b7b6fe1fe
+@ANI_SHAKING 					: ani_shaking;
+
+/*上下跳动*/						//http://img.ishanshan.com/gimg/img/1aaa7aef0ca811f843db9e1e4fc1fcd3
+@ANI_BEATING 					: ani_beating;
+
+/*左摆球*/							 //http://img.ishanshan.com/gimg/img/ec9155f25f6c3d293761b5787e4892e6
+@ANI_NEWTON_L 					: ani_newton_l;
+
+/*右摆球*/							 //http://img.ishanshan.com/gimg/img/d9a495f14eda9c2533fd4a75d95e1d84
+@ANI_NEWTON_R 					: ani_newton_r;
+
+/*摆动上升*/						//http://img.ishanshan.com/gimg/img/a537b622d2068d337063a1e18cf88d16
+@ANI_IMAGE_SWINGING_UP 			: ani_image_swinging_up;
+
+/*斜角上升*/						//http://img.ishanshan.com/gimg/img/a537b622d2068d337063a1e18cf88d16
+@ANI_IMAGE_ANGLE_LAUNCH 		: ani_image_angle_launch;
+
+/*上下摆动平缓*/
+@ANI_SHAKING_GENTLE 			: ani_shaking_gentle;
+
+/*波浪移动*/
+@WAVE_MOVE 						: wave_move;
+
+/*刹车后移动(左侧进入)*/
+@ANI_BRAKE_SPRINT_LEFT 			: ani_brake_sprint_left;
+
+/*刹车后移动(右侧进入)*/
+@ANI_BRAKE_SPRINT_RIGHT 		: ani_brake_sprint_right;
+
+/*刹车后移动(上侧进入)*/
+@ANI_BRAKE_SPRINT_TOP 			: ani_brake_sprint_top;
+
+/*刹车后移动(下侧进入)*/
+@ANI_BRAKE_SPRINT_BOTTOM 		: ani_brake_sprint_bottom;
+
+/*字体打印*/
+@ANI_TEXT_PRINT 				: ani_text_print;
+
+/*字体样式ONE*/
+@ANI_TEXT_ROLLIN 				: ani_text_roll;
+
+/*字体样式TWO*/
+@ANI_TEXT_TORNADO 				: ani_text_tornado;
+
+/*裁剪后逐渐显示 纵*/
+.ANI_CLIP_SHOW_VERTICAL(@WIDTH, @HEIGHT, @NAME, @DURATION, @TIMING, @DELAY, @COUNT) {
+	@keyframes ani_vertical_clip {
+		0% {
+			opacity: 0;
+			clip: rect(0px @WIDTH 0px 0px);
+			clip: rect(0px, @WIDTH, 0px, 0px);
+		}
+		100% {
+			opacity: 1;
+			clip: rect(0px @WIDTH @HEIGHT 0px);
+			clip: rect(0px, @WIDTH, @HEIGHT, 0px);
+		}
+	}
+	.ANI_CLIP_COMMON(@WIDTH, @HEIGHT, @NAME, @DURATION, @TIMING, @DELAY, @COUNT);
+}
+
+/*裁剪后逐渐显示 横*/
+.ANI_CLIP_SHOW_HORIZONTAL(@WIDTH, @HEIGHT, @NAME, @DURATION, @TIMING, @DELAY, @COUNT) {
+	@keyframes ani_horizontal_clip {
+		0% {
+			opacity: 0;
+			clip: rect(0px 0px @HEIGHT 0px);
+			clip: rect(0px, 0px, @HEIGHT, 0px);
+
+		}
+		100% {
+			opacity: 1;
+			clip: rect(0px @WIDTH @HEIGHT 0px);
+			clip: rect(0px,@WIDTH, @HEIGHT, 0px);
+		}
+	}
+	.ANI_CLIP_COMMON(@WIDTH, @HEIGHT, @NAME, @DURATION, @TIMING, @DELAY, @COUNT);
+}
+
+/*左摆球*/
+.ANI_NEWTON_L {
+	animation: newton_l;
+	-webkit-animation: newton_l;
+	animation-delay: 1s;
+	animation-duration: 1.5s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease;
+	animation-iteration-count: infinite;
+	@keyframes newton_l {
+		0% {
+			transform: translateX(-0.5rem) translateY(-0.1rem);
+		}
+		30% {
+			transform: translateX(0rem) translateY(0rem);
+		}
+		60% {
+			transform: translateX(0rem) translateY(0rem);
+		}
+		100% {
+			transform: translateX(-0.5rem) translateY(-0.1rem);
+		}
+	}
+}
+
+/*右摆球*/
+.ANI_NEWTON_R {
+	animation: newton_r;
+	-webkit-animation: newton_r;
+	animation-delay: 1.3s;
+	animation-duration: 1.5s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease;
+	animation-iteration-count: infinite;
+	@keyframes newton_r {
+		0% {
+			transform: translateX(0rem) translateY(0rem);
+		}
+		30% {
+			transform: translateX(0.5rem) translateY(-0.1rem);
+		}
+		50% {
+			transform: translateX(0rem) translateY(0rem);
+		}
+		100% {
+			transform: translateX(0rem) translateY(0rem);
+		}
+	}
+}

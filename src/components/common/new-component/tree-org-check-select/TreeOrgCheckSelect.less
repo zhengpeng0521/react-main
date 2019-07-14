@@ -1,0 +1,42 @@
+:global{
+    .tree_org_check_select .ant-modal-body{
+        padding : 20px;
+    }
+    .tree_org_check_select .ant-modal-footer{
+        margin : 0;
+        padding : 0 20px 20px 20px;
+    }
+    .tree_org_check_select .ant-tree > li:last-child{ padding-bottom : 5px; }
+    .tree_org_check_select .ant-tree > li:first-child{ padding-top : 5px; }
+}
+.tenant_org_select_content {
+    width: 100%;
+}
+.org_to_select_tree {
+    height : 400px;
+    width : 100%;
+    display : -webkit-flex;
+    display : flex;
+    flex-wrap : nowrap;
+}
+.tree_content {
+    height : 100%;
+    width : calc(~'(100% - 20px)/2');
+    overflow : auto;
+    margin-right : 20px;
+    &:last-child{
+        margin-right : 0;
+    }
+}
+
+/*校区过滤*/
+.org_select_cont {
+    width: 350px;
+    margin-bottom : 10px;
+}
+.block_tree_node {
+    display: block;
+}
+.hidden_tree_node {
+    display: none;
+}

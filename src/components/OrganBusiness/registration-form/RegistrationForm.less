@@ -1,0 +1,193 @@
+.check:hover{
+    color:red;
+}
+.check:active{
+    color:#77c8f8;
+}
+.form_left{
+    width:375px;
+    float:left;
+    height: 650px;
+    background:#f1f1f1;
+    margin-top: 20px;
+}
+.form_right{
+    width:50%;
+    float:right;
+    height: 650px;
+    padding: 30px;
+}
+.form_worp{
+    height: 100%;
+    border: 3px solid #2f4151;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.form_banner{
+    height:100px;
+    overflow: hidden;
+}
+.form_config{
+    padding:0 22.5px;
+    margin:40px auto;
+}
+.form_banner img{
+    height:100px;
+    width:100%;
+}
+.form_btn{
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    padding: 0 22.5px;
+}
+.banner_img{
+    width:100%;
+    height:100px;
+}
+.banner_addBtn{
+    width:100%;
+    text-align: right;
+}
+.gameThanksImg{
+    width:100%;
+    height:100px;
+}
+.banner_text{
+    line-height:100px;
+    font-size:30px;
+    color:#eee;
+    text-align: center;
+}
+.banner_list{
+    .banner_dele{
+        display: none;
+    }
+    &:hover .banner_dele{
+        display: block;
+    }
+}
+.ant-carousel .slick-slide {
+  text-align: center;
+  height: 160px;
+  line-height: 160px;
+  background: #364d79;
+  overflow: hidden;
+}
+.ant-carousel .slick-slide h3 {
+  color: #fff;
+}
+.common_input(@top) {
+	margin: auto;
+	margin-top: @top;
+	clear: right;
+    height: 44px;
+    background: white;
+    border-radius: 5px;
+}
+
+.input_organ_box {
+	.common_input(10px);
+    display:flex;
+}
+
+.input_code_box {
+    width: 50%;
+    margin-top: 0px;
+    float: left;
+}
+
+.comon_code {
+    float: right;
+    margin-right: 15%;
+    height: 32px;
+    width: 70px;
+    border-radius: 5px;
+    font-size: 12px;
+    line-height: 32px;
+    text-align: center;
+    margin-top: 20px;
+    background: #666;
+}
+.form_btn_text{
+    width: 70%;
+    margin: 15px auto;
+    background: #eee;
+    height: 40px;
+    line-height: 40px;
+}
+
+.h5_label {
+    line-height: 45px;
+    font-size: 15px;
+    color: #666;
+    text-align: left;
+    float: left;
+    text-indent:5px;
+    width: 25%;
+}
+
+.h5_input {
+    float: left;
+    margin-left:1.5rem;
+}
+
+.formLeft :global(.ant-form-item){
+   margin-bottom: 0 !important;
+}
+.form_worp :global(.ant-select-selection),.form_worp :global(.ant-input){
+    border:none;
+    &:focus,&:hover,&:active{
+        outline:0;
+        border:none;
+        border-color:aliceblue;
+        box-shadow:none;
+    }
+}
+.form_worp :global(.ant-select-selection__rendered){
+   width:150px;
+}
+
+.h5_code_f1f1f1 {
+    float: right;
+    font-size: 15px;
+    background: #f1f1f1;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    color: #999;
+    margin: auto 10px;
+    line-height: 30px;
+    height: 30px;
+    width: 80px;
+}
+.h5_input_code{
+    margin-left: 2rem;
+}
+.h5_option {
+    font-size: 15px;
+    height: 30px;
+}
+
+.h5_registered_cont{
+    width: 100%;
+    height:40px;
+    line-height: 40px;
+    background-color: #88c70a;
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 16px 0 RGBA(69, 96, 16, 0.44);
+    transition: opacity  2s;
+    opacity : 1;
+}
+
+.extraBox{
+    position: relative;
+}
+.extraDelete{
+    position: absolute;
+    top: 44px;
+    right: 0;
+}

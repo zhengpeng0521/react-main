@@ -1,0 +1,36 @@
+/*引入less定义的方法*/
+@import '../../less/common.less';
+
+:global{
+    .common_block_title{
+        overflow:hidden;
+        height:25px;
+        margin-bottom:10px;
+        display: -webkit-flex;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 1.16rem;
+        i{
+            background-color: #5d9cec;
+            color:#fff;
+            font-size:1.6rem;
+            border-radius: 50%;
+            cursor:pointer;
+        }
+    }
+}
+.title_block{
+    height:14px;
+    width:8px;
+    background-color:#5d9cec;
+    margin-right: 10px;
+    .borderRadius(3px,3px,3px,3px);
+}
+.title_content{
+    height:100%;
+    line-height:25px;
+    margin-right:10px;
+}

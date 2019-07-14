@@ -1,0 +1,38 @@
+@baseName : textComponent;
+
+:global {
+	.@{baseName} {
+		
+	}
+}
+
+.commonText(@size) {
+	height : 50px;
+	line-height: 50px;
+	width : 50%;
+	font-size: @size;
+	color : black;
+	border : 1px transparent solid;
+	text-align : center;
+}
+
+.textStyle1 {
+	.commonText(25px);
+}
+
+.textStyle2 {
+	.commonText(20px);
+}
+
+.textStyle3 {
+	.commonText(15px);
+}
+
+.textStyle4 {
+	.commonText(12px);
+}
+
+.textStyle1:hover, .textStyle2:hover, .textStyle3:hover, .textStyle4:hover {
+	border : 1px black solid;
+	color : #ea4545;
+}

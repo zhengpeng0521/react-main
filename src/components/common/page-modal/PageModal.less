@@ -1,0 +1,107 @@
+:global {
+    .form_modal_box_open {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 0;
+        z-index: 101;
+    }
+
+    .form_modal_box_close {
+
+    }
+
+    .form_modal_box_open, .form_modal_page {
+        position: fixed;
+        top: 45px;
+        bottom: 0;
+        right: 0;
+        z-index: 101;
+    }
+
+    .form_modal_page {
+        background: #FFF;
+        transition: -webkit-transform .5s ease-in-out 0s;
+        transition: transform .5s ease-in-out 0s;
+        transition: transform .5s ease-in-out 0s,-webkit-transform .5s ease-in-out 0s;
+        -webkit-transform: translate(100%);
+        -ms-transform: translate(100%);
+        transform: translate(100%);
+        padding: 20px;
+    }
+
+    .form_modal_box_open .form_modal_page_active {
+        -webkit-transform: translate(0);
+        -ms-transform: translate(0);
+        transform: translate(0);
+        box-shadow: -5px 10px 8px 3px rgba(0, 0, 0, 0.2);
+    }
+}
+
+.form_modal_mock {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    z-index: 100;
+    background-color: rgba(55,55,55,.6);
+}
+
+.form_modal_header {
+    border-bottom: 1px solid #DDD;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.header_title_text {
+    font-size: 24px;
+    color: #5D9CEC;
+}
+
+.header_close_btn {
+    position: absolute;
+    right: 10px;
+    top: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #999;
+}
+
+.form_modal_content {
+    position: relative;
+    overflow: hidden;
+}
+
+.form_modal_warp {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    overflow: auto;
+    margin-right: -5px;
+    margin-bottom: -5px;
+}
+
+.form_modal_body {
+    padding: 16px;
+    height: 100%;
+}
+
+.formal_modal_footer {
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+}
+.footer_item {
+    margin-left: 25px;
+    display: inline-block;
+}
+
+.foot_btn_item_cont {
+    display: inline-block;
+}

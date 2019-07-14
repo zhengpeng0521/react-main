@@ -1,0 +1,89 @@
+@import '../../../lib.less';
+
+.page_item_list {
+    overflow-y: auto;
+}
+
+.page_prev_item {
+    border:1px solid #999;
+    padding: 10px;
+    width: 130px;
+    height: 155px;
+    position: relative;
+    overflow: hidden;
+    margin: 10px 5px 0 10px;
+}
+
+.page_prev_item_active {
+    border: 2px solid @zsb-main-color;
+    width: 130px;
+    height: 155px;
+    position: relative;
+    overflow: hidden;
+    margin: 10px 5px 0 10px;
+}
+
+.page_prev_item:hover {
+    border: 2px solid #999;
+     width: 130px;
+    height: 155px;
+    position: relative;
+    overflow: hidden;
+    margin: 10px 5px 0 10px;
+}
+
+.item_prev_cont {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    border: 1px solid #000;
+    display: inline-block;
+    cursor: pointer;
+    position:relative;
+    overflow: hidden;
+}
+
+.item_bar {
+    text-align: left;
+    margin-top: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.page_item_name {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 25%;
+    font-size: 0.8rem;
+    display: inline-block;
+}
+
+.add_btn_cont {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px;
+}
+
+.add_btn {
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+.item_bar_cont {
+    width: 75%;
+    display: inline-block;
+    text-align: right;
+    font-size: 0.8rem;
+}
+.item_bar_icon {
+    margin: 0 3px;
+    cursor: pointer;
+}
+.item_bar_icon:hover {
+    color: @zsb-main-color;
+}

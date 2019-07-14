@@ -1,0 +1,57 @@
+.check_update_message{
+    position:relative;
+    width:100%;
+    height:100px;
+    line-height:100px;
+    text-align:center;
+    font-size:16px;
+    font-weight:700;
+    color:#ffffff;
+    z-index:9999;
+    cursor:pointer;
+}
+.message{
+    -webkit-transition:all 0.2s;
+       -moz-transition:all 0.2s;
+        -ms-transition:all 0.2s;
+         -o-transition:all 0.2s;
+            transition:all 0.2s;
+}
+.message:hover{
+    font-size:20px;
+}
+.doubleDown{
+    position:absolute;
+    right:47%;
+    font-size: 16px;
+    -webkit-transform:rotate(-90deg);
+       -moz-transform:rotate(-90deg);
+        -ms-transform:rotate(-90deg);
+         -o-transform:rotate(-90deg);
+            transform:rotate(-90deg);
+    -webkit-animation:DoubleDown infinite 0.7s ease-out alternate;
+       -moz-animation:DoubleDown infinite 0.7s ease-out alternate;
+        -ms-animation:DoubleDown infinite 0.7s ease-out alternate;
+         -o-animation:DoubleDown infinite 0.7s ease-out alternate;
+            animation:DoubleDown infinite 0.7s ease-out alternate;
+    @keyframes DoubleDown{
+        from {bottom:15px}
+        to {bottom:5px}
+    }
+    @-o-keyframes DoubleDown{
+        from {bottom:15px}
+        to {bottom:5px}
+    }
+    @-ms-keyframes DoubleDown{
+        from {bottom:15px}
+        to {bottom:5px}
+    }
+    @-moz-keyframes DoubleDown{
+        from {bottom:15px}
+        to {bottom:5px}
+    }
+    @-webkit-keyframes DoubleDown{
+        from {bottom:15px}
+        to {bottom:5px}
+    }
+}

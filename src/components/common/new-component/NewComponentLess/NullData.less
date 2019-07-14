@@ -1,0 +1,21 @@
+/*引入less定义的方法*/
+@import '../../less/common.less';
+
+/*无数据页面*/
+.null_data{
+    display: -webkit-flex;
+    display: flex;
+    flex-direction : column;
+    justify-content : center;
+    align-items : center;
+    min-height: 100px;
+    >img{
+        .transform(scale(.6));
+        margin-bottom: -10px;
+    }
+    >div{
+        cursor: default;
+        font-size: 1rem;
+        color: #999;
+    }
+}

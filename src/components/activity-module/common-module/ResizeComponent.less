@@ -1,0 +1,62 @@
+:global {
+	.editableElement:hover {
+		cursor: se-resize;
+	}
+}
+
+.bleedingLine {
+    margin: auto;
+    margin-top: 8px;
+    border-style: dashed;
+    border-width: 1px;
+    border-color: red;
+    position: absolute;
+    left: 8px;
+}
+
+.contentDivSelect {
+	.contentDiv();
+	border : 1px yellow dashed;
+}
+
+.contentDiv {
+	height 	: 100%;
+	width 	: 100%;
+	// overflow : hidden;
+	border : 1px transparent dashed;
+}
+
+.originPointLine {
+    width: 1px;
+    height: 8px;
+    border-left: 1px #2196F3 solid;
+    position: relative;
+    top: -7px;
+    transform: rotate(-30deg);
+}
+
+.originPointLine:hover {
+	cursor: pointer;
+}
+
+.contentDivSelectBoxBorder {
+	border : 1px #2196F3 solid;
+	background-color:rgba(93, 155, 236, 0.3);
+}
+
+.contentDivSelectBoxBorder:hover {
+	cursor: move;
+	background-color:rgba(93, 155, 236, 0.3);
+}
+
+.contentDivNoSelectBoxBorder {
+	width : calc(~"100% + 2px");
+	height : calc(~"100% + 2px");
+	border : 1px transparent dotted;
+}
+
+.contentDivNoSelectBoxBorder:hover {
+	cursor: pointer;
+	border : 1px #2196F3 solid;
+	background-color:rgba(93, 155, 236, 0.3);
+}

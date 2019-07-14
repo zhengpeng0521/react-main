@@ -1,0 +1,44 @@
+
+.menu_link:hover{
+    color: rgba(255,255,255,0.8);
+}
+.marquee{
+    width:calc(~"100% - 240px");
+    height:100%;
+    display:inline-block;
+    cursor:default;
+    moz-user-select: -moz-none;
+    -moz-user-select: none;
+    -o-user-select:none;
+    -khtml-user-select:none;
+    -webkit-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+.icon_star{
+    -webkit-animation:star infinite 3s linear ;
+       -moz-animation:star infinite 3s linear ;
+        -ms-animation:star infinite 3s linear ;
+         -o-animation:star infinite 3s linear ;
+            animation:star infinite 3s linear ;
+}
+    @keyframes star{
+        from {transform:rotate(0)}
+        to {transform:rotate(-360deg)}
+    }
+    @-o-keyframes star{
+        from {-o-transform:rotate(0)}
+        to {-o-transform:rotate(-360deg)}
+    }
+    @-ms-keyframes star{
+        from {-ms-transform:rotate(0)}
+        to {-ms-transform:rotate(-360deg)}
+    }
+    @-moz-keyframes star{
+        from {-moz-transform:rotate(0)}
+        to {-moz-transform:rotate(-360deg)}
+    }
+    @-webkit-keyframes star{
+        from {-webkit-transform:rotate(0)}
+        to {-webkit-transform:rotate(-360deg)}
+    }

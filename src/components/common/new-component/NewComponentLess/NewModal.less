@@ -1,0 +1,117 @@
+/*引入less定义的方法*/
+@import '../../less/common.less';
+
+:global{
+	.common_detail .ant-tabs-mini .ant-tabs-tab{
+		padding : 13px 20px;
+	}
+	.common_detail .ant-tabs-ink-bar{
+		height : 4px;
+		background-color : #5d9cec;
+	}
+	.common_detail .ant-tabs-mini .ant-tabs-nav-container{
+		background-color : #f5f6f8;
+	}
+	.common_detail .ant-tabs-nav .ant-tabs-tab{
+		color : #666;
+		font-size : 14px;
+	}
+    .common_detail .ant-tabs-nav-scroll{
+        padding : 0 20px;
+    }
+	.common_detail .ant-tabs-nav .ant-tabs-tab-active{
+		color : #5d9cec;
+	}
+	.common_detail .ant-tabs-nav .ant-tabs-tab:hover{
+		color : #5d9cec;
+	}
+	.common_detail .ant-tabs-bar{
+		margin-bottom : 0;
+	}
+    .common_detail .ant-tabs-tab-next,.ant-tabs-tab-prev{
+        margin : 0;
+        display : -webkit-flex;
+        display : flex;
+        justify-content : center;
+        align-items : center
+    }
+    .common_detail .ant-btn-group .ant-btn{
+        &:hover,&:focus{
+            border-color: #d9d9d9;
+        }
+    }
+    .common_detail .anticon-close{
+        cursor:pointer;
+        color: rgba(0,0,0,0.6);
+        .transition(all .5s);
+    }
+    .common_detail .anticon-close:hover{
+        color: rgba(0,0,0,0.4);
+        .transform(rotate(180deg));
+    }
+}
+/*右边划入框*/
+.all_page_right_enter_modal_open{
+    background-color: #fff;
+    position:fixed;
+    border:1px solid #ddd;
+    right:0;
+    z-index: 999;
+    box-shadow:-1px 1px 10px #ddd;
+    .transform(translate(0));
+//    .borderRadius(5px,5px,5px,5px);
+    .transition(all .5s ease-in-out 0s);
+}
+.all_page_right_enter_modal_close{
+    background-color: #fff;
+    position:fixed;
+    border:1px solid #ddd;
+    right:0;
+    z-index: 999;
+    .transform(translate(100%));
+    .borderRadius(5px,5px,5px,5px);
+    .transition(all .5s ease-in-out 0s);
+}
+.page_right_enter_modal_header{
+    overflow: hidden;
+    height:50px;
+    border-bottom: 1px solid #ddd;
+    padding: 0 16px;
+    font-size: 16px;
+    color:#fff;
+    background-color:@saas_main_color;
+    .borderRadius(5px,5px,0,0);
+}
+.page_right_enter_modal_header_title{
+    height:100%;
+    line-height: 50px;
+    float:left;
+}
+.page_right_enter_modal_header_close{
+    line-height: 50px;
+    float:right;
+}
+.page_right_enter_modal_header_close_x{
+    cursor: pointer;
+    color:#ddd;
+    .transition(all .3s linear 0s);
+    &:hover{
+        color:#fff;
+        .transform(rotate(180deg));
+    }
+}
+
+.page_right_enter_modal_content{
+//    padding:16px;
+    overflow: hidden;
+}
+.page_right_enter_modal_footer{
+    overflow: hidden;
+    height:50px;
+    line-height: 50px;
+    padding:0 16px;
+    border-top: 1px solid #ddd;
+}
+.page_right_enter_modal_footer_content{
+    float:right;
+}
